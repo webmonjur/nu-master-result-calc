@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NU Result calculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="result-box">
+            <h2>BD NU Master Result Calculation System</h2>
+            <div class="input-box">
+                <table class="content-table" id="table">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                            <th>Grade Point</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sub 1</td>
+                            <td><select name="" class="select" id="sub1" onchange="change()">
+                                <option value="">Select</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                                <option value="0.00">F</option>
+                            </select></td>
+                            <td><h4 id="sub1p">0.00</h4></td>
+                        </tr>
+                        <tr>
+                            <td>Sub 2</td>
+                            <td><select name="" class="select" id="sub2" onchange="change()">
+                                <option value="">Select</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                                <option value="0.00">F</option>
+                            </select></td>
+                            <td><h4 id="sub2p">0.00</h4></td>
+                        </tr>
+                        <tr>
+                            <td>Sub 3</td>
+                            <td><select name="" class="select" id="sub3" onchange="change()">
+                                <option value="">Select</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                                <option value="0.00">F</option>
+                            </select></td>
+                            <td><h4 id="sub3p">0.00</h4></td>
+                        </tr>
+                        <tr>
+                            <td>Sub 4</td>
+                            <td><select name="" class="select" id="sub4" onchange="change()">
+                                <option value="">Select</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                                <option value="0.00">F</option>
+                            </select></td>
+                            <td><h4 id="sub4p">0.00</h4></td>
+                        </tr>
+                        <tr>
+                            <td>Sub 5</td>
+                            <td><select name="" class="select" id="sub5" onchange="change()">
+                                <option value="">Select</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                                <option value="0.00">F</option>
+                            </select></td>
+                            <td><h4 id="sub5p">0.00</h4></td>
+                        </tr>
+                        <tr>
+                            <td>Sub 6</td>
+                            <td><select name="" class="select" id="sub6" onchange="change()">
+                                <option value="">Select</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                                <option value="0.00">F</option>
+                            </select></td>
+                            <td><h4 id="sub6p">0.00</h4></td>
+                        </tr>
+                        <tr>
+                            <td>Sub 7</td>
+                            <td><select name="" class="select" id="sub7" onchange="change()">
+                                <option value="">Select</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                                <option value="0.00">F</option>
+                            </select></td>
+                            <td><h4 id="sub7p">0.00</h4></td>
+                        </tr>
+                        <tr>
+                            <td>TERM PAPER</td>
+                            <td><select name="" class="select" id="term" onchange="change()">
+                                <option value="">Select</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                                <option value="0.00">F</option>
+                            </select></td>
+                            <td><h4 id="termP">0.00</h4></td>
+                        </tr>
+                        <tr>
+                            <td>VIVA-VOCE</td>
+                            <td><select name="" class="select" id="viva" onchange="change()">
+                                <option value="">Select</option>
+                                <option value="4.00">A+</option>
+                                <option value="3.75">A</option>
+                                <option value="3.50">A-</option>
+                                <option value="3.25">B+</option>
+                                <option value="3.00">B</option>
+                                <option value="2.75">B-</option>
+                                <option value="2.50">C+</option>
+                                <option value="2.25">C</option>
+                                <option value="2.00">D</option>
+                                <option value="0.00">F</option>
+                            </select></td>
+                            <td><h4 id="vivaP">0.00</h4></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                <div class="calculation">
+                    <div class="result"><h3>Expected CGPA = <span id="result"></span></h3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="setting.js"></script>
+</body>
+</html>
