@@ -34,7 +34,7 @@ body{
     border-collapse: collapse;
     margin:25px 0;
     font-size:1em;
-    min-width:600px;
+    width:100%;
 }
 .content-table thead tr{
     background-color:#009879;
